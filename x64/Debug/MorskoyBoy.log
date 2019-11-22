@@ -1,0 +1,6 @@
+﻿  MorskoyBoy.cpp
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(222,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(259,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(56): warning C4715: Index: значение возвращается не при всех путях выполнения
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(220): warning C4715: <lambda_4ffa5f2de0f040801d8edca7a40050c8>::operator(): значение возвращается не при всех путях выполнения
+  MorskoyBoy.vcxproj -> C:\Users\Павел\source\repos\MorskoyBoy\x64\Debug\MorskoyBoy.exe

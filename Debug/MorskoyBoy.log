@@ -1,0 +1,82 @@
+﻿  MorskoyBoy.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(889,1): error C2528:  pointer: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(838): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::allocator<_Ty>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(838): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(838): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(838): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(838): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::allocator_traits<_Alloc>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :             _Alloc=std::allocator<int &>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :  выполняется компиляция ссылки на экземпляр псевдоним шаблон функции "std::_Rebind_alloc_t<std::allocator<_Ty>,_Ty>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(347): message :         ]
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(37): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::vector<int &,std::allocator<_Ty>>"
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(37): message :         with
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(37): message :         [
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(37): message :             _Ty=int &
+C:\Users\Павел\source\repos\MorskoyBoy\MorskoyBoy.cpp(37): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(890,1): error C2528:  const_pointer: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(907,1): error C2528:  address: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(912,1): error C2528:  address: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(924,1): error C2528:  _Ptr: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(930,1): error C2528:  allocate: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(935,1): error C2528:  allocate: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(784,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(839): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Default_allocator_traits<_Alloc>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(839): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(839): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(839): message :             _Alloc=std::allocator<int &>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(839): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(785,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(804,1): error C2528:  <template-parameter>: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(809,1): error C2528:  <template-parameter>: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(864,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(350): message :  выполняется компиляция ссылки на шаблон переменной "const bool _Is_simple_alloc_v<std::allocator<int &> >"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(864,1): error C2528:  <template-parameter>: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(865,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(865,1): error C2528:  <template-parameter>: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(352,1): error C2528:  <template-parameter>: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(677,1): error C2535:  void std::vector<int &,std::allocator<_Ty>>::push_back(_Ty): функция-член уже определена или объявлена
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(677,1): error C2535:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(677,1): error C2535:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(677,1): error C2535:             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(677,1): error C2535:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(673): message :   см. объявление "std::vector<int &,std::allocator<_Ty>>::push_back"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(673): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(673): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(673): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(673): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(760,1): error C2535:  std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Ty): функция-член уже определена или объявлена
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(760,1): error C2535:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(760,1): error C2535:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(760,1): error C2535:             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(760,1): error C2535:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(756): message :   см. объявление "std::vector<int &,std::allocator<_Ty>>::insert"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(756): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(756): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(756): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(756): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1366,1): error C2528:  data: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1370,1): error C2528:  data: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(874,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(310): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Simple_types<_Ty>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(310): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(310): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(310): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(310): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(1505): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Vector_val<std::_Simple_types<_Ty>>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(1505): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(1505): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(1505): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(1505): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1720): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Compressed_pair<std::allocator<_Ty>,std::_Vector_val<std::_Simple_types<_Ty>>,true>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1720): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1720): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1720): message :             _Ty=int &
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\vector(1720): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\xmemory0(875,1): error C2528:  abstract declarator: недопустимый указатель на ссылку
