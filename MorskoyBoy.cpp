@@ -5,8 +5,10 @@
 #include <ctime>
 #include<thread>
 #include <chrono>
+#include<tuple>
 #define ship '#'
 #define destroyed 'X'
+#define miss '*'
 
 const char chars[] = {'A','B','C','D','E','F','G','H','I','J'};
 void DrawArea()
@@ -98,7 +100,9 @@ public:
 			}
 			this->coords.push_back((this->Create(i, this->mode)));
 		}
+		if (!mode) ReDraw();
 		Print();
+		
 	}
 	~Ships()
 	{
@@ -239,8 +243,9 @@ bool Ships::CheckCoords(const bool mode,int x, const int& y,int j)
 	}
 	return true;
 }
-int Hit(int x,int y, std::vector<Ships*>& enemy) //0 - мимо 1 - ранил 2-убил
+int Hit(int x,int y, std::vector<Ships*>& enemy,bool who) //0 - мимо 1 - ранил 2-убил
 {
+
 	for(int i =0;i<enemy.size();i++)
 		for(int z=0;z<enemy[i]->coords.size();z++)
 			if (x == enemy[i]->coords[z][0] && y == enemy[i]->coords[z][1])
@@ -249,8 +254,17 @@ int Hit(int x,int y, std::vector<Ships*>& enemy) //0 - мимо 1 - ранил 2
 				if (result) { enemy.erase(enemy.begin() + i); return 2; }
 				else return 1;
 			}
+	int x_cur = getXcoord();
+	int y_cur = getYcoord();
+	who ? SetCursor(2 * Index(chars, x) + 43, y) : SetCursor(2 * Index(chars, x) + 2, y);
+	std::cout << miss;
+	SetCursor(x_cur, y_cur);
+	
+
+	
 	return 0;
 }
+std::vector<std::tuple<int, int>> Points;
 int main()
 {
 	setlocale(0, "ru");
@@ -290,7 +304,7 @@ int main()
 			rt[1] = atoi(&crds[1]);
 			std::cout << (char)rt[0] << rt[1];
 			//Проверка удара
-			switch (Hit(rt[0], rt[1], EnemyShips))
+			switch (Hit(rt[0], rt[1], EnemyShips,who))
 			{
 			case 0: {std::cout << "Мимо!"; who = 1; break; }
 			case 1: {std::cout << "Ранил!"; break; }
@@ -304,24 +318,33 @@ int main()
 			int rt[2];
 			rt[1] = rand() % 10 + 1;
 			rt[0] = rand() % 10 + 65;
-			std::cout << (char)rt[0] << rt[1];
-			switch (Hit(rt[0], rt[1], YourShips))
+			for (int i = 0; i < Points.size(); i++)
 			{
-			case 0: {std::cout << "Мимо!"; who = 0; break; }
-			case 1: {std::cout << "Ранил!"; break; }
-			case 2: {std::cout << "Убил!"; break; }
+				while(Points[i] == std::make_tuple(rt[0], rt[1]))
+				{
+					rt[1] = rand() % 10 + 1;
+					rt[0] = rand() % 10 + 65;
+				}
 			}
+			std::cout << (char)rt[0] << rt[1];
+			switch (Hit(rt[0], rt[1], YourShips,who))
+			{
+			case 0: {std::cout << " Мимо!"; who = 0; break; }
+			case 1: {std::cout << " Ранил!"; break; }
+			case 2: {std::cout << " Убил!"; break; }
+			}
+			Points.push_back(std::make_tuple(rt[0],rt[1]));
 			std::cout << std::endl;
 		}
 		if (EnemyShips.size() == 0)
 		{
-			std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+			system("pause");
 			system("cls");
 			std::cout << "Вы выиграли!!!" << std::endl;
 		}
 		if (YourShips.size() == 0)
 		{
-			std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+			system("pause");
 			system("cls");
 			std::cout << "Вы проиграли(((" << std::endl;
 		}
